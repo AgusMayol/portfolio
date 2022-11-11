@@ -13,110 +13,214 @@
 
 <body>
 
-    <header>
-        <nav>
-            <ul>
-                <li class="li">
-                    <a href="https://github.com/agusmayol" target="_blank"><i class="fa-lg fa-brands fa-github"></i></a>
-                </li>
-                <li class="li">
-                    <a class="selected" href="../sections/contact.html">Contact</a>
-                </li>
-                <li class="li">
-                    <a href="../sections/aboutme.html">About</a>
-                </li>
-                <li class="li">
-                    <a href="../sections/skills.html">Skills</a>
-                </li>
-                <li class="li">
-                    <a href="../sections/proyects.html">Proyects</a>
-                </li>
-                <li class="li">
-                    <a href="../index.html">Home</a>
-                </li>
-            </ul>
-            <ul>
-                <li class="logo">
-                    <a href="../index.html"><img style="width: 40px; height: 40px;" src="../assets/images/logo.jpg"
-                            alt="Logo"></a>
-                </li>
-            </ul>
-        </nav>
-    </header>
+    <div id="grilla">
 
-    <div class="container mt10">
+        <header>
+            <nav>
+                <ul class="desktop">
+                    <li>
+                        <div class="logo">
+                            <a href="../index.html">
+                                <img src="../assets/images/logo.jpg" alt="Logo">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
 
-        <div class="icon">
-            <img src="../assets/svg/mono/icon-social-providers.svg"
-                alt="Icon with a hashtag, a heart, a marker and a hand.">
-        </div>
+                <ul class="container justify-content_center align-items_center mobile">
+                    <li>
+                        <a class="container-vertical align-items_center justify-content_center" href="../index.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <polyline points="5 12 3 12 12 3 21 12 19 12"></polyline>
+                                <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7"></path>
+                                <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6"></path>
+                            </svg>
+                            <p class="li-p">Home</p>
+                        </a>
+                    </li>
 
-        <div class="container-vertical justify-content_center">
-            <h1 class="p0_5">Let's get in touch!</h1>
-            <section>
-                <article>
-                    <p class="p0_5 ml1">You can contact me through the following form, or
-                        through any of my networks below.</p>
-                </article>
-            </section>
-        </div>
+                    <li>
+                        <a class="container-vertical align-items_center justify-content_center" href="./proyects.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <rect x="4" y="4" width="6" height="6" rx="1"></rect>
+                                <rect x="4" y="14" width="6" height="6" rx="1"></rect>
+                                <rect x="14" y="14" width="6" height="6" rx="1"></rect>
+                                <line x1="14" y1="7" x2="20" y2="7"></line>
+                                <line x1="17" y1="4" x2="17" y2="10"></line>
+                            </svg>
+                            <p class="li-p">Proyects</p>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a class="container-vertical align-items_center justify-content_center" href="./skills.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M6 17.6l-2 -1.1v-2.5"></path>
+                                <path d="M4 10v-2.5l2 -1.1"></path>
+                                <path d="M10 4.1l2 -1.1l2 1.1"></path>
+                                <path d="M18 6.4l2 1.1v2.5"></path>
+                                <path d="M20 14v2.5l-2 1.12"></path>
+                                <path d="M14 19.9l-2 1.1l-2 -1.1"></path>
+                                <line x1="12" y1="12" x2="14" y2="10.9"></line>
+                                <line x1="18" y1="8.6" x2="20" y2="7.5"></line>
+                                <line x1="12" y1="12" x2="12" y2="14.5"></line>
+                                <line x1="12" y1="18.5" x2="12" y2="21"></line>
+                                <path d="M12 12l-2 -1.12"></path>
+                                <line x1="6" y1="8.6" x2="4" y2="7.5"></line>
+                            </svg>
+                            <p class="li-p">Skills</p>
+                        </a>
+
+                    </li>
+
+                    <li>
+                        <a class="container-vertical align-items_center justify-content_center" href="./aboutme.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <circle cx="12" cy="12" r="9"></circle>
+                                <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                                <polyline points="11 12 12 12 12 16 13 16"></polyline>
+                            </svg>
+                            <p class="li-p">About</p>
+                        </a>
+
+                    </li>
+
+                    <li class="selected">
+                        <a class="container-vertical align-items_center justify-content_center" href="./contact.html">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                                stroke-width="1.5" stroke="#2c3e50" fill="none" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <rect x="3" y="5" width="18" height="14" rx="2"></rect>
+                                <polyline points="3 7 12 13 21 7"></polyline>
+                            </svg>
+                            <p class="li-p">Contact</p>
+                        </a>
+
+                    </li>
+                </ul>
+
+                <ul class="desktop">
+                    <li>
+                        <a href="../index.html">Home</a>
+                    </li>
+
+                    <li>
+                        <a href="./proyects.html">Proyects</a>
+                    </li>
+
+                    <li>
+                        <a href="./skills.html">Skills</a>
+                    </li>
+
+                    <li>
+                        <a href="./aboutme.html">About</a>
+                    </li>
+
+                    <li class="selected">
+                        <a href="./contact.html">Contact</a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/agusmayol" target="_blank"><i
+                                class="fa-lg fa-brands fa-github"></i></a>
+                    </li>
+                </ul>
+
+            </nav>
+        </header>
+
+
+        <div id="section">
+
+            <div class="container mt10">
+
+                <div class="icon">
+                    <img src="../assets/svg/mono/icon-social-providers.svg"
+                        alt="Icon with a hashtag, a heart, a marker and a hand.">
+                </div>
+
+                <div class="container-vertical justify-content_center">
+                    <h1 class="p0_5">Let's get in touch!</h1>
+                    <section>
+                        <article>
+                            <p class="p0_5 ml1">You can contact me through the following form, or
+                                through any of my networks below.</p>
+                        </article>
+                    </section>
+                </div>
 
 
 
-    </div>
-
-    <div class="container justify-content_center">
-        <form class="justify-content_space-between" action="" method="post">
-
-            <input type="text" name="user_name" id="name" placeholder="Full Name">
-
-            <input type="email" name="user_mail" id="mail" placeholder="E-Mail">
-
-            <textarea name="user_message" id="message" placeholder="Message"></textarea>
+            </div>
 
             <div class="container justify-content_center">
-                <a style="text-decoration: none;" href="#">
-                    <div class="proyect-btn">
+                <form class="justify-content_space-between" action="" method="post">
 
-                        <p class="proyect-btn-p"><i class="fa-lg fa-solid fa-paper-plane"></i> SEND MESSAGE
-                        </p>
+                    <input type="text" name="user_name" id="name" placeholder="Full Name">
+
+                    <input type="email" name="user_mail" id="mail" placeholder="E-Mail">
+
+                    <textarea name="user_message" id="message" placeholder="Message"></textarea>
+
+                    <div class="container justify-content_center">
+                        <a style="text-decoration: none;" href="#">
+                            <div class="proyect-btn">
+
+                                <p class="proyect-btn-p"><i class="fa-lg fa-solid fa-paper-plane"></i> SEND MESSAGE
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+
+            <p class="footer-p">CREATED WITH 💗 BY MAYOL AGUSTÍN - 2022</p>
+            <div class="container justify-content_space-between" style="margin-left: 0.7em;">
+
+                <a href="https://github.com/agusmayol" target="_blank">
+                    <div class="media"><img src="../assets/svg/media/github.svg" alt="Github">
+                    </div>
+                </a>
+
+                <a href="https://instagram.com/" target="_blank">
+                    <div class="media"><img src="../assets/svg/media/instagram.svg" alt="Instagram">
+                    </div>
+                </a>
+
+                <a href="https://twitter.com/" target="_blank">
+                    <div class="media"><img src="../assets/svg/media/twitter.svg" alt="Twitter">
+                    </div>
+                </a>
+
+                <a href="mailto:agusmayolitos@gmail.com" target="_blank">
+                    <div class="media"><img src="../assets/svg/media/mail.svg" alt="Mail">
+                    </div>
+                </a>
+
+                <a href="https://api.whatsapp.com/send/?phone=" target="_blank">
+                    <div class="media"><img src="../assets/svg/media/whatsapp.svg" alt="Whatsapp">
                     </div>
                 </a>
             </div>
-        </form>
+        </footer>
     </div>
-
-    <footer>
-
-        <p class="footer-p">CREATED WITH 💗 BY MAYOL AGUSTÍN - 2022</p>
-        <div class="container justify-content_space-between" style="margin-left: 0.7em;">
-
-            <a href="https://github.com/agusmayol" target="_blank">
-                <div class="media"><img src="../assets/svg/media/github.svg" alt="Github">
-                </div>
-            </a>
-
-            <a href="https://instagram.com/" target="_blank">
-                <div class="media"><img src="../assets/svg/media/instagram.svg" alt="Instagram">
-                </div>
-            </a>
-
-            <a href="https://twitter.com/" target="_blank">
-                <div class="media"><img src="../assets/svg/media/twitter.svg" alt="Twitter">
-                </div>
-            </a>
-
-            <a href="mailto:agusmayolitos@gmail.com" target="_blank">
-                <div class="media"><img src="../assets/svg/media/mail.svg" alt="Mail">
-                </div>
-            </a>
-
-            <a href="https://api.whatsapp.com/send/?phone=" target="_blank">
-                <div class="media"><img src="../assets/svg/media/whatsapp.svg" alt="Whatsapp">
-                </div>
-            </a>
-        </div>
-    </footer>
 
 </body>
 
