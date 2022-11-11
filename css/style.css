@@ -122,9 +122,9 @@ textarea {
 .selected {
     color: black;
     font-weight: bold;
-    /* border-bottom: 0.2em solid var(--c-primary); */
-    border-radius: 2.5em;
-    background-color: var(--c-primary);
+    border-bottom: 0.2em solid var(--c-primary);
+    border-radius: 0.1em;
+    background-color: transparent;
 }
 
 .selected a {
@@ -525,8 +525,7 @@ footer {
 }
 
 .badge {
-    width: 4em;
-    padding: 0.1em;
+    padding: 3px;
     border-radius: 2.5em;
     font-size: 1.6em;
     text-align: center;
