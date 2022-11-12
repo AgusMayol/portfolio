@@ -76,12 +76,13 @@ form {
         -10px -10px 20px #ffffff;
     font-family: 'SFB', sans-serif;
     font-weight: bold;
-    width: 35em;
+    width: 27em;
     display: flex;
     flex-flow: nowrap column;
     align-items: center;
     padding: 2em;
     height: 30em;
+    margin-top: 5em;
 }
 
 label {
@@ -97,13 +98,13 @@ input {
     font-family: 'SF', sans-serif;
     height: 2.5em;
     font-size: 1.5em;
-    width: 20em;
+    width: 17em;
     padding: 0.5em;
+    border: 1px solid #CDCFD2;
 }
 
-a {
-    color: #3f72f5;
-    text-decoration: none;
+#aboutme_container {
+    margin-top: 5em;
 }
 
 textarea {
@@ -115,8 +116,14 @@ textarea {
     font-family: 'SF', sans-serif;
     height: 2.5em;
     font-size: 1.5em;
-    width: 98%;
+    width: 95%;
     padding: 0.5em;
+    border: 1px solid #CDCFD2;
+}
+
+a {
+    color: #3f72f5;
+    text-decoration: none;
 }
 
 .selected {
@@ -304,7 +311,7 @@ h2 {
     display: flex;
     flex-flow: wrap column;
     justify-content: space-between;
-    margin-top: 4em;
+    margin-top: 6em;
 }
 
 .proyects-img {
