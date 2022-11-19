@@ -21,14 +21,27 @@
     --c-disabled: #8C8B94;
 
     --c-background: #EAEBEF;
-
-
 }
+
+html {
+    font-family: 'SFB', sans-serif;
+    font-size: 62.5%;
+    /* 10px */
+    background-color: var(--c-background);
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+.desktop {
+    display: none;
+}
+
+/* BOOTSTRAP */
 
 .nav {
     position: fixed;
     bottom: 0;
-    background: rgba(255, 255, 255, 0.2);
+    background: rgba(232, 232, 237, 0.87);
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     width: 100%;
@@ -59,7 +72,9 @@
     align-items: center;
 }
 
-.nav-icon {}
+.nav-icon {
+    display: block;
+}
 
 .nav-title {
     font-size: 0.5em;
@@ -68,19 +83,6 @@
 
 .github-icon {
     display: none;
-}
-
-.desktop {
-    display: none;
-}
-
-html {
-    font-family: 'SFB', sans-serif;
-    font-size: 62.5%;
-    /* 10px */
-    background-color: var(--c-background);
-    scroll-behavior: smooth;
-    overflow-x: hidden;
 }
 
 p {
@@ -318,6 +320,112 @@ h2 {
     flex-flow: wrap column;
 }
 
+/* PROYECTS */
+
+.proy {
+    /* grids */
+    display: grid;
+    grid-template-areas:
+        "img"
+        "badges"
+        "title"
+        "content"
+        "btn";
+
+    margin: 6em 1em 0 1em;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 50px 50px 1fr 50px;
+    grid-gap: 1.5em 0em;
+
+    /* style */
+    border-radius: 24px;
+    background: var(--c-background);
+    box-shadow: 20px 20px 60px var(--c-primary),
+        -20px -20px 60px #ffffff;
+    width: auto;
+    height: auto;
+    padding: 2em;
+    display: flex;
+    flex-flow: wrap column;
+    justify-content: space-between;
+}
+
+.proy-img {
+    grid-area: img;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+}
+
+.proy-img img {
+    width: 30em;
+    height: 175px;
+    border-radius: 12px;
+}
+
+.proy-badges {
+    grid-area: badges;
+    display: flex;
+    flex-flow: wrap row;
+    align-content: center;
+    justify-content: center;
+}
+
+.proy-title {
+    grid-area: title;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.2em;
+    font-weight: bold;
+
+}
+
+.proy-content {
+    grid-area: content;
+    color: #8C8B94;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.7em;
+
+}
+
+.proy-btn {
+    grid-area: btn;
+    background: linear-gradient(145deg, #437aff, #3967dd);
+    border-radius: 8px;
+    display: flex;
+    flex-flow: nowrap row;
+    padding: 1.5em;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+}
+
+.proy-btn:hover {
+    background: linear-gradient(145deg, #3d71eb, #335ecc);
+    transition: background-color 0.15s ease-in;
+}
+
+.proy-btn-a {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.proy-btn-p {
+    font-size: 1.5em;
+    font-family: 'SFB', sans-serif;
+    color: white;
+}
+
+.proy-btn-p:first-child {
+    padding-right: 0.5em;
+    font-size: 1.5em;
+    font-family: 'SFB', sans-serif;
+    color: white;
+}
+
 .proyects {
     border-radius: 24px;
     background: var(--c-background);
@@ -537,23 +645,14 @@ footer {
     border-radius: 2.4em;
 }
 
-/* -------------- */
-
-.container-badge {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-flow: row wrap;
-    align-content: center;
-    justify-content: center;
-}
+/* BADGES */
 
 .badge {
-    padding: 3px;
+    padding: 3px 10px 3px 10px;
     border-radius: 2.5em;
     font-size: 1.6em;
     text-align: center;
-    margin: 0.7em;
+    margin: 0 0.7em 0.7em 0.7em;
     color: white;
     opacity: 0.7;
 }
@@ -725,7 +824,7 @@ footer {
 
     .nav-title {
         font-size: 20px;
-        font-family: "SFB";
+        font-family: 'SFB', sans-serif;
         color: var(--c-disabled);
     }
 
