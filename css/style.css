@@ -18,10 +18,56 @@
     --c-primary-hover: #A2B9EE;
     --c-secondary: #A2DCEE;
     --c-secondary-hover: #ADEEE2;
+    --c-disabled: #8C8B94;
 
     --c-background: #EAEBEF;
 
 
+}
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    width: 100%;
+    height: 5em;
+    z-index: 1;
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.nav-urls {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-logo {
+    display: none;
+}
+
+.nav-a {
+    display: flex;
+    flex-flow: nowrap column;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-icon {}
+
+.nav-title {
+    font-size: 0.5em;
+    font-weight: bold;
+}
+
+.github-icon {
+    display: none;
 }
 
 .desktop {
@@ -126,33 +172,16 @@ a {
     text-decoration: none;
 }
 
-.selected {
-    color: black;
+.selected p {
+    color: var(--c-primary);
     font-weight: bold;
-    border-bottom: 0.2em solid var(--c-primary);
-    border-radius: 0.1em;
-    background-color: transparent;
 }
 
-.selected a {
-    color: black;
+.selected svg {
+    stroke: var(--c-primary);
 }
 
-nav {
-    position: fixed;
-    top: 0;
-    background: rgba(255, 255, 255, 0.2);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
-    width: 100%;
-    height: 5em;
-    z-index: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav a {
+.nav a {
     text-decoration: none;
     color: #8C8B94;
 }
@@ -243,17 +272,6 @@ h2 {
     width: 20em;
     height: 20em;
     border-radius: 0em 0em 100em 100em;
-}
-
-.logo {
-    width: 2em;
-    height: 2em;
-    padding: 1em;
-}
-
-.logo img {
-    width: 2em;
-    height: 2em;
 }
 
 .btn {
@@ -407,7 +425,6 @@ footer {
     justify-content: space-between;
     flex-wrap: nowrap;
     align-items: center;
-    margin-top: 5em;
 }
 
 .footer-p {
@@ -643,11 +660,11 @@ footer {
 
     display: grid;
     grid-template-areas:
-        "header"
         "contenido"
-        "footer";
+        "footer"
+        "header";
     grid-template-columns: auto;
-    grid-template-rows: 50px 1fr 50px;
+    grid-template-rows: 1fr 50px 50px;
     grid-gap: 3em 0em;
 }
 
@@ -662,6 +679,60 @@ footer {
         scroll-behavior: smooth;
     }
 
+    .nav {
+        position: fixed;
+        top: 0;
+        background: rgba(255, 255, 255, 0.2);
+        backdrop-filter: blur(5px);
+        -webkit-backdrop-filter: blur(5px);
+        width: 100%;
+        height: 5em;
+        z-index: 1;
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .nav-urls {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-urls li {
+        padding: 10px;
+    }
+
+    .nav-logo {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-a {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .nav-icon {
+        display: none;
+    }
+
+    .nav-title {
+        font-size: 20px;
+        font-family: "SFB";
+        color: var(--c-disabled);
+    }
+
+    .github-icon {
+        display: block;
+    }
+
     p {
         color: black;
         font-size: 2.5em;
@@ -674,11 +745,10 @@ footer {
         font-size: 2em;
         text-decoration: none;
         display: inline;
-        padding: 0.5em;
     }
 
     li :hover {
-        color: black;
+        color: var(--c-primary-hover);
         transition: color 0.2s ease;
     }
 
@@ -740,32 +810,8 @@ footer {
         padding: 0.5em;
     }
 
-    .selected {
-        color: black;
-        font-weight: bold;
-        padding: 0.5em;
-        border-bottom: 0.2em solid var(--c-primary);
-        border-radius: 0.1em;
-        background-color: transparent;
-    }
-
-    .selected a {
-        color: black;
-    }
-
-    nav {
-        margin-right: 1.5em;
-        position: fixed;
-        top: 0;
-        background: rgba(255, 255, 255, 0.2);
-        backdrop-filter: blur(5px);
-        -webkit-backdrop-filter: blur(5px);
-        width: 100%;
-        height: 4.9em;
-        z-index: 1;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+    .selected p {
+        color: var(--c-primary);
     }
 
     nav a {
@@ -868,7 +914,6 @@ footer {
     .logo {
         width: 40px;
         height: 40px;
-        padding: 1em;
     }
 
     .logo img {
