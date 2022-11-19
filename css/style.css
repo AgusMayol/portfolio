@@ -320,7 +320,7 @@ h2 {
     flex-flow: wrap column;
 }
 
-/* PROYECTS */
+/* PROJECTS */
 
 .proy {
     /* grids */
@@ -388,6 +388,13 @@ h2 {
 
 }
 
+.proy-btn-s {
+    display: flex;
+    flex-flow: nowrap row;
+    justify-content: center;
+    align-items: center;
+}
+
 .proy-btn {
     grid-area: btn;
     background: linear-gradient(145deg, #437aff, #3967dd);
@@ -397,7 +404,7 @@ h2 {
     padding: 1.5em;
     justify-content: center;
     align-items: center;
-    width: auto;
+    width: 100%;
 }
 
 .proy-btn:hover {
@@ -426,7 +433,7 @@ h2 {
     color: white;
 }
 
-.proyects {
+.projects {
     border-radius: 24px;
     background: var(--c-background);
     box-shadow: 20px 20px 60px var(--c-primary),
@@ -440,25 +447,25 @@ h2 {
     margin-top: 6em;
 }
 
-.proyects-img {
+.projects-img {
     width: 100%;
     height: 175px;
     border-radius: 12px;
 }
 
-.proyect-h3 {
+.project-h3 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.2em;
     font-weight: bold;
 }
 
-.proyect-p {
+.project-p {
     color: #8C8B94;
     font-family: 'Montserrat', sans-serif;
     font-size: 1.7em;
 }
 
-.proyect-btn {
+.project-btn {
     background: linear-gradient(145deg, #437aff, #3967dd);
     border-radius: 8px;
     display: flex;
@@ -470,12 +477,12 @@ h2 {
     width: auto;
 }
 
-.proyect-btn:hover {
+.project-btn:hover {
     background: linear-gradient(145deg, #3d71eb, #335ecc);
     transition: background-color 0.15s ease-in;
 }
 
-.proyect-btn-p {
+.project-btn-p {
     font-size: 1.5em;
     font-family: 'SFB', sans-serif;
     color: white;
@@ -539,68 +546,6 @@ footer {
     font-size: 1.25em;
     font-family: 'Montserrat', sans-serif;
     padding: 0.7em;
-}
-
-
-/* -- Proyects Section -- */
-.proyects-section {
-    border-radius: 24px;
-    background: var(--c-background);
-    box-shadow: 35px 35px 75px #c7c8cb,
-        -35px -35px 85px #ffffff;
-    width: 90%;
-    height: auto;
-    padding: 2em;
-    display: flex;
-    flex-flow: wrap column;
-    justify-content: space-between;
-    margin: 1em;
-    margin-top: 4em;
-}
-
-.proyects-section-img {
-    width: 30em;
-    height: 17.5em;
-    border-radius: 1.2em;
-}
-
-.proyect-section-h3 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.2em;
-    font-weight: bold;
-    padding: 0.5em;
-}
-
-.proyect-section-p {
-    color: #8C8B94;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.7em;
-    padding: 0em 0.5em 1em 0.5em;
-}
-
-.proyect-section-btn {
-    background: linear-gradient(145deg, #437aff, #3967dd);
-    border-radius: 8px;
-    width: 27.5em;
-    height: 5em;
-    margin-top: 6em;
-    margin-left: 1.25em;
-}
-
-.proyect-section-btn:hover {
-    background-color: #3765db;
-    transition: background-color 0.15s ease-in;
-    cursor: pointer;
-}
-
-.proyect-section-btn-p {
-    font-size: 1.5em;
-    font-family: 'SFB', sans-serif;
-    text-align: center;
-    color: white;
-    margin-top: -2.93em;
-    margin-left: 0em;
-    padding: 0.9em;
 }
 
 /* SKILLS */
@@ -745,10 +690,6 @@ header {
     grid-area: contenido;
 }
 
-.border {
-    border: 1px solid black;
-}
-
 footer {
     grid-area: footer;
 }
@@ -767,7 +708,7 @@ footer {
     grid-gap: 3em 0em;
 }
 
-
+/* -----[ DESKTOP ]----- */
 
 @media screen and (min-width: 1024px) {
     html {
@@ -1065,55 +1006,118 @@ footer {
         flex-flow: wrap column;
     }
 
-    .proyects {
+    /* PROJECTS SECTION */
+    #projects-container {
+        display: flex;
+        flex-flow: wrap column;
+        align-items: flex-start;
+    }
+
+    #projects-container:nth-of-type(even) {
+        display: flex;
+        flex-flow: column;
+        align-items: flex-end;
+    }
+
+    .proy {
+        /* grids */
+        display: grid;
+        grid-template-columns: 1fr 0.5fr;
+        grid-template-rows: 0.7fr 0.15fr 0.2fr 0.15fr;
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+
+        /* style */
         border-radius: 24px;
         background: var(--c-background);
         box-shadow: 20px 20px 60px var(--c-primary),
             -20px -20px 60px #ffffff;
-        width: 30em;
-        height: 40em;
+        width: 85em;
+        height: 37em;
         padding: 2em;
-        display: flex;
-        flex-flow: wrap column;
-        justify-content: space-between;
     }
 
-    .proyects-img {
-        width: 100%;
+    .proy-img {
+        grid-area: 1 / 1 / 2 / 2;
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        width: 30em;
+        height: 175px;
+    }
+
+    .proy-img img {
+        width: 30em;
         height: 175px;
         border-radius: 12px;
     }
 
-    .proyect-h3 {
+    .proy-badges {
+        grid-area: 1 / 2 / 4 / 3;
+        display: flex;
+        flex-flow: wrap column;
+        align-content: flex-end;
+        justify-content: flex-start;
+    }
+
+    .proy-title {
+        grid-area: 2 / 1 / 3 / 2;
         font-family: 'Montserrat', sans-serif;
         font-size: 2.2em;
         font-weight: bold;
+
     }
 
-    .proyect-p {
+    .proy-content {
+        grid-area: 3 / 1 / 4 / 2;
         color: #8C8B94;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.7em;
+
     }
 
-    .proyect-btn {
+    .proy-btn-s {
+        grid-area: 4 / 2 / 5 / 3;
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: flex-end;
+        justify-items: flex-end;
+        align-items: flex-end;
+    }
+
+    .proy-btn {
         background: linear-gradient(145deg, #437aff, #3967dd);
         border-radius: 8px;
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        flex-wrap: nowrap;
-        align-items: center;
+        flex-flow: nowrap row;
         padding: 1.5em;
-        width: auto;
+        justify-content: center;
+        align-items: center;
+        width: 20em;
     }
 
-    .proyect-btn:hover {
+    .proy-btn:hover {
         background: linear-gradient(145deg, #3d71eb, #335ecc);
         transition: background-color 0.15s ease-in;
     }
 
-    .proyect-btn-p {
+    .proy-btn-a {
+        display: flex;
+        flex-flow: nowrap row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .proy-btn-p {
+        font-size: 1.5em;
+        font-family: 'SFB', sans-serif;
+        color: white;
+    }
+
+    .proy-btn-p:first-child {
+        padding-right: 0.5em;
         font-size: 1.5em;
         font-family: 'SFB', sans-serif;
         color: white;
@@ -1180,8 +1184,8 @@ footer {
     }
 
 
-    /* -- Proyects Section -- */
-    .proyects-section {
+    /* -- Projects Section -- */
+    .projects-section {
         border-radius: 24px;
         background: var(--c-background);
         box-shadow: 35px 35px 75px #c7c8cb,
@@ -1195,25 +1199,25 @@ footer {
         margin: 5.1em;
     }
 
-    .proyects-section-img {
+    .projects-section-img {
         width: 275px;
         height: 175px;
         border-radius: 12px;
     }
 
-    .proyect-section-h3 {
+    .project-section-h3 {
         font-family: 'Montserrat', sans-serif;
         font-size: 2.2em;
         font-weight: bold;
     }
 
-    .proyect-section-p {
+    .project-section-p {
         color: #8C8B94;
         font-family: 'Montserrat', sans-serif;
         font-size: 1.7em;
     }
 
-    .proyect-section-btn {
+    .project-section-btn {
         background: linear-gradient(145deg, #437aff, #3967dd);
         border-radius: 8px;
         width: 27.5em;
@@ -1222,13 +1226,13 @@ footer {
         margin-left: 1.25em;
     }
 
-    .proyect-section-btn:hover {
+    .project-section-btn:hover {
         background-color: #3765db;
         transition: background-color 0.15s ease-in;
         cursor: pointer;
     }
 
-    .proyect-section-btn-p {
+    .project-section-btn-p {
         font-size: 1.5em;
         font-family: 'SFB', sans-serif;
         text-align: center;
