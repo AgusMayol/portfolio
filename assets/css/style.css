@@ -20,7 +20,8 @@
     --c-secondary-hover: #ADEEE2;
     --c-disabled: #8C8B94;
 
-    --c-background: #EAEBEF;
+    --c-background: #f4f2fa;
+    /* OLD: #EAEBEF */
     --c-background-cards: #f4f2fa;
 }
 
