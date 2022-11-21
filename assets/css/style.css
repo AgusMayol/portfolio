@@ -25,12 +25,38 @@
     --c-background-cards: #f4f2fa;
 }
 
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: baseline;
+}
+
 html {
     font-family: 'SFB', sans-serif;
     font-size: 62.5%;
     /* 10px */
     background-color: var(--c-background);
     scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--c-background);
 }
 
 .desktop {
@@ -128,6 +154,7 @@ p {
     color: black;
     font-size: 2.5em;
     font-family: 'SF', sans-serif;
+    margin-bottom: 0;
 }
 
 .li-p {
@@ -170,6 +197,8 @@ form {
     padding: 2em;
     height: auto;
     margin-top: 5em;
+    margin-left: 2em;
+    margin-right: 2em;
 }
 
 label {
@@ -183,16 +212,16 @@ input {
     box-shadow: inset 5px 5px 5px #cbced1,
         inset -5px -5px 5px #ffffff;
     font-family: 'SF', sans-serif;
-    height: 2.5em;
+    height: 3.5em;
     font-size: 1.5em;
-    width: 17em;
+    width: 20em;
     padding: 0.5em;
-    border: 1px solid #CDCFD2;
     margin: 1em;
 }
 
-#aboutme_container {
-    margin-top: 5em;
+a {
+    color: #3f72f5;
+    text-decoration: none;
 }
 
 textarea {
@@ -202,14 +231,13 @@ textarea {
     box-shadow: inset 5px 5px 5px #cbced1,
         inset -5px -5px 5px #ffffff;
     font-family: 'SF', sans-serif;
-    height: 2.5em;
+    height: 3.5em;
     font-size: 1.5em;
-    width: 17em;
-    padding: 0.5em;
-    border: 1px solid #CDCFD2;
-    margin: 1em;
-    min-width: 17em;
+    width: 20em;
+    min-width: 20em;
     min-height: 2.5em;
+    padding: 0.5em;
+    margin: 1em;
 }
 
 a {
@@ -250,6 +278,7 @@ h1 {
     font-size: 5em;
     text-align: center;
     padding: 1em;
+    font-family: 'SFB', sans-serif;
 }
 
 /* BREADCRUMB */
@@ -389,7 +418,7 @@ h2 {
     border-radius: 0em 0em 100em 100em;
 }
 
-.btn {
+.boton {
     background: var(--c-background-cards);
     box-shadow: 10px 10px 20px var(--c-primary),
         -10px -10px 20px var(--c-secondary-hover);
@@ -399,19 +428,19 @@ h2 {
     justify-content: space-evenly;
     flex-wrap: nowrap;
     align-items: center;
-    width: 16.5em;
+    width: 18em;
     transition: box-shadow 0.15s ease-in;
     padding: 0.5em;
     margin-top: 2.5em;
 }
 
-.btn-p {
+.boton-p {
     font-family: 'SFB', sans-serif;
     font-size: 1.6em;
     padding-right: 0.5em;
 }
 
-.btn:hover {
+.boton:hover {
     background: linear-gradient(145deg, #d3d4d7, var(--c-background));
     box-shadow: 10px 10px 20px var(--c-secondary-hover),
         -10px -10px 20px var(--c-primary);
@@ -423,12 +452,12 @@ h2 {
     margin-top: 20em;
 }
 
-.container {
+.contenedor {
     display: flex;
     flex-flow: wrap row;
 }
 
-.container-vertical {
+.contenedor-vertical {
     display: flex;
     flex-flow: wrap column;
 }
@@ -567,8 +596,8 @@ h2 {
     background: var(--c-background-cards);
     box-shadow: 20px 20px 60px var(--c-primary),
         -20px -20px 60px #ffffff;
-    width: 30em;
-    height: 40em;
+    width: 35em;
+    height: auto;
     padding: 2em;
     display: flex;
     flex-flow: wrap column;
@@ -690,6 +719,7 @@ footer {
     font-size: 1.25em;
     font-family: 'Montserrat', sans-serif;
     padding: 0.7em;
+    margin-bottom: 0;
 }
 
 /* SKILLS */
@@ -735,6 +765,9 @@ footer {
 }
 
 .logo {
+    padding: 0;
+    padding-left: 0.3em;
+    margin: 0;
     width: 40px;
     height: 40px;
 }
@@ -936,6 +969,7 @@ footer {
         grid-area: 1 / 1 / 2 / 2;
         font-size: 6em;
         /* Reinicia paddings anteriores */
+        font-family: 'SFB', sans-serif;
         padding: 1em 0em 0em 0em;
         margin-left: 1.3em;
         text-align: start;
@@ -1097,7 +1131,7 @@ footer {
     .proj {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
 
@@ -1107,7 +1141,7 @@ footer {
         box-shadow: 20px 20px 60px var(--c-primary),
             -20px -20px 60px #ffffff;
         width: 65em;
-        height: 35em;
+        height: auto;
         padding: 2em;
         margin-left: 5.1em;
         float: left;
@@ -1168,6 +1202,8 @@ footer {
         font-family: 'Montserrat', sans-serif;
         font-size: 2.2em;
         font-weight: bold;
+        padding: 0.5em;
+        padding-left: 0;
     }
 
     .proj-content-s {
@@ -1444,7 +1480,7 @@ footer {
         box-shadow: inset 5px 5px 5px #cbced1,
             inset -5px -5px 5px #ffffff;
         font-family: 'SF', sans-serif;
-        height: 2.5em;
+        height: 3.5em;
         font-size: 1.5em;
         width: 20em;
         padding: 0.5em;
@@ -1463,7 +1499,7 @@ footer {
         box-shadow: inset 5px 5px 5px #cbced1,
             inset -5px -5px 5px #ffffff;
         font-family: 'SF', sans-serif;
-        height: 2.5em;
+        height: 3.5em;
         font-size: 1.5em;
         width: 20em;
         min-width: 20em;
@@ -1498,6 +1534,7 @@ footer {
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
+        font-family: 'SFB', sans-serif;
     }
 
     .indexh1 {
@@ -1575,7 +1612,7 @@ footer {
         border-radius: 0em 0em 100em 100em;
     }
 
-    .btn {
+    .boton {
         border-radius: 10px;
         background: var(--c-background-cards);
         box-shadow: 10px 10px 20px var(--c-primary),
@@ -1586,19 +1623,19 @@ footer {
         justify-content: space-evenly;
         flex-wrap: nowrap;
         align-items: center;
-        width: 16.5em;
+        width: 18em;
         transition: box-shadow 0.15s ease-in;
         padding: 0.5em;
         margin: 2em;
     }
 
-    .btn-p {
+    .boton-p {
         font-family: 'SFB', sans-serif;
         font-size: 1.6em;
         padding-right: 0.5em;
     }
 
-    .btn:hover {
+    .boton:hover {
         background: linear-gradient(145deg, #d3d4d7, var(--c-background));
         box-shadow: 10px 10px 20px var(--c-secondary-hover),
             -10px -10px 20px var(--c-primary);
@@ -1610,12 +1647,12 @@ footer {
         margin-top: 20em;
     }
 
-    .container {
+    .contenedor {
         display: flex;
         flex-flow: wrap row;
     }
 
-    .container-vertical {
+    .contenedor-vertical {
         display: flex;
         flex-flow: wrap column;
     }
@@ -1627,10 +1664,14 @@ footer {
         margin-bottom: 1em;
     }
 
+    img {
+        vertical-align: baseline;
+    }
+
     .proj {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(4, 1fr);
+        grid-template-rows: repeat(4, auto);
         grid-column-gap: 0px;
         grid-row-gap: 0px;
 
@@ -1640,7 +1681,7 @@ footer {
         box-shadow: 20px 20px 60px var(--c-primary),
             -20px -20px 60px #ffffff;
         width: 65em;
-        height: 35em;
+        height: auto;
         padding: 2em;
         margin-left: 5.1em;
         float: left;
@@ -1701,6 +1742,8 @@ footer {
         font-family: 'Montserrat', sans-serif;
         font-size: 2.2em;
         font-weight: bold;
+        padding: 0.5em;
+        padding-left: 0;
     }
 
     .proj-content-s {
