@@ -163,12 +163,12 @@ form {
         -10px -10px 20px #ffffff;
     font-family: 'SFB', sans-serif;
     font-weight: bold;
-    width: 27em;
+    width: auto;
     display: flex;
     flex-flow: nowrap column;
     align-items: center;
     padding: 2em;
-    height: 30em;
+    height: auto;
     margin-top: 5em;
 }
 
@@ -188,6 +188,7 @@ input {
     width: 17em;
     padding: 0.5em;
     border: 1px solid #CDCFD2;
+    margin: 1em;
 }
 
 #aboutme_container {
@@ -203,9 +204,12 @@ textarea {
     font-family: 'SF', sans-serif;
     height: 2.5em;
     font-size: 1.5em;
-    width: 95%;
+    width: 17em;
     padding: 0.5em;
     border: 1px solid #CDCFD2;
+    margin: 1em;
+    min-width: 17em;
+    min-height: 2.5em;
 }
 
 a {
@@ -1421,12 +1425,12 @@ footer {
             -10px -10px 20px #ffffff;
         font-family: 'SFB', sans-serif;
         font-weight: bold;
-        width: 35em;
+        width: auto;
         display: flex;
         flex-flow: nowrap column;
         align-items: center;
         padding: 2em;
-        height: 30em;
+        height: auto;
     }
 
     label {
@@ -1444,6 +1448,7 @@ footer {
         font-size: 1.5em;
         width: 20em;
         padding: 0.5em;
+        margin: 1em;
     }
 
     a {
@@ -1460,8 +1465,11 @@ footer {
         font-family: 'SF', sans-serif;
         height: 2.5em;
         font-size: 1.5em;
-        width: 98%;
+        width: 20em;
+        min-width: 20em;
+        min-height: 2.5em;
         padding: 0.5em;
+        margin: 1em;
     }
 
     .selected p {
