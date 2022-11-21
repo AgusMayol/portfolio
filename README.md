@@ -27,4 +27,4 @@ Historial de cambios:
 - Utilizar git para controlar las versiones
 - Subir a github, y utilizar github pages para poder ver el responsive.
 
-- No pude agregar Bootstrap en esta entrega, ya que me pisa los estilos ya existentes y me desconfiguró toda las propiedades. Es por eso que el CDN está comentado en cada head de los HTML. Ni bien pueda solucionar el problema lo haré. Igualmente ya envié un mensaje por CoderASK. [Esperando respuesta].
+Saludos! Hasta la próxima entrega.
