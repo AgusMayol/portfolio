@@ -11,7 +11,7 @@ Link github pages: https://agusmayol.github.io/portfolio/
 Notas:
 - Todos los archivos HTML son responsive y tienen sus puntos de quiebre. Utilizan Grids y Flexbox para ello.
 
-- En bootstrap solo utilicé Modals, que se encuentran en los botones de la sección Projects. No usé el navbar ni el footer de BTS ya que me gustaba como lo tenía creado hasta el momento y no lo vi necesario. Además, me cambiaba mucho el estilo de la página. Espero que no haya problemas.
+- En bootstrap solo utilicé Modals, que se encuentran en los botones de la sección Projects.
 
 Historial de cambios:
 - Bootstrap añadido
