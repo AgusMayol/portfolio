@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- SEO -->
+    <meta name="description"
+        content="Projects page of my personal portfolio, it contains some information of the projects that i worked recently.">
+    <meta name="keywords"
+        content="Agus, Agustin, Mayol, Agustin Mayol,  Agus Mayol, agus.mayol, Agus mayol, programacion, developer, fullstack, frontend, backend, front-end, back-end, full-stack, html, css, js, sass, scss">
+
     <!-- BOOTSTRAP CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -13,6 +19,11 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <!-- OWN CSS -->
     <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- BOOTSTRAP BUNDLE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
 
 
     <link rel="shortcut icon" href="../assets/images/logo.jpg" type="image/x-icon">
@@ -30,7 +41,7 @@
         <header>
             <nav class="nav">
                 <ul class="nav-logo">
-                    <li class="logo"><a href="../index.html"><img src="../assets/images/logo.jpg" alt="Logo"></a></li>
+                    <li><a href="../index.html"><img src="../assets/images/logo.jpg" alt="Logo"></a></li>
                 </ul>
                 <ul class="nav-urls">
                     <li><a class="nav-a" href="../index.html">
@@ -99,7 +110,7 @@
                         </a></li>
                     <li class="desktop"><a class="nav-a" href="https://github.com/AgusMayol" target="_blank">
                             <i class="fa-lg fa-brands fa-github"></i>
-                            </svg>
+                            <p class="visually-hidden">Github</p>
                         </a></li>
                 </ul>
             </nav>
@@ -123,6 +134,7 @@
                     <h1 class="bc-title desktop">My work up till now</h1>
                     <h1 class="bc-title mobile">Projects</h1>
                     <p class="bc-content">These are the projects that I am most proud of.</p>
+                    <h2 class="visually-hidden">Projects section</h2>
                 </article>
             </section>
 
@@ -134,30 +146,36 @@
                 <article>
                     <div class="proj-s">
                         <div class="proj" data-aos="fade-up">
-                            <div class="proj-img"><img src="../assets/images/dashboard.png" alt="Dashboard home page.">
-                            </div>
-                            <div class="proj-badges">
-                                <p class="etiqueta etiqueta-php">PHP</p>
-                                <p class="etiqueta etiqueta-html">HTML</p>
-                                <p class="etiqueta etiqueta-js">JS</p>
-                                <p class="etiqueta etiqueta-css">CSS</p>
-                                <p class="etiqueta etiqueta-sql">SQL</p>
-                            </div>
-                            <div class="proj-title-s">
-                                <h3 class="proj-title">Admin Dashboard</h3>
+                            <div class="proj-img">
+                                <img src="../assets/images/dashboard.png" alt="Dashboard home page.">
                             </div>
 
-                            <p class="proj-content">Web application that facilitates the administration of
-                                large
-                                numbers of users
-                                in a database.
-                                Allows collaboration between teams.</p>
+                            <div class="proj-badges">
+                                <p class="etiqueta-php">PHP</p>
+                                <p class="etiqueta-html">HTML</p>
+                                <p class="etiqueta-js">JS</p>
+                                <p class="etiqueta-css">CSS</p>
+                                <p class="etiqueta-sql">SQL</p>
+                            </div>
+
+                            <div class="proj-title">
+                                <h3>Admin Dashboard</h3>
+                            </div>
+
+                            <div class="proj-content">
+                                <p>Web application that facilitates the administration of
+                                    large
+                                    numbers of users
+                                    in a database.
+                                    Allows collaboration between teams.</p>
+                            </div>
+
                             <div class="proj-btn-s">
                                 <div class="proj-btn">
-                                    <button class="proj-btn-a" style="background: transparent; border: none;"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <p class="proj-btn-p"><i class="fa-lg fa-solid fa-folder-open"></i></p>
-                                        <p class="proj-btn-p">OPEN PROJECT</p>
+                                    <button style="background: transparent; border: none;" data-bs-toggle="modal"
+                                        data-bs-target="#myModal">
+                                        <p><i class="fa-lg fa-solid fa-folder-open"></i></p>
+                                        <p>OPEN PROJECT</p>
                                     </button>
                                 </div>
                             </div>
@@ -169,21 +187,24 @@
                             <div class="proj-img"><img src="../assets/images/discordbot.jpg" alt="Discord bot code.">
                             </div>
                             <div class="proj-badges">
-                                <p class="etiqueta etiqueta-js">JS</p>
-                                <p class="etiqueta etiqueta-sql">SQL</p>
+                                <p class="etiqueta-js">JS</p>
+                                <p class="etiqueta-sql">SQL</p>
                             </div>
-                            <div class="proj-title-s">
-                                <h3 class="proj-title">Discord Bot</h3>
+                            <div class="proj-title">
+                                <h3>Discord Bot</h3>
                             </div>
 
-                            <p class="proj-content">Discord bot with administrative, fun, security and
-                                information capabilities. Fully adaptable to any community.</p>
+                            <div class="proj-content">
+                                <p>Discord bot with administrative, fun, security and
+                                    information capabilities. Fully adaptable to any community.</p>
+                            </div>
+
                             <div class="proj-btn-s">
                                 <div class="proj-btn">
-                                    <button class="proj-btn-a" style="background: transparent; border: none;"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <p class="proj-btn-p"><i class="fa-lg fa-solid fa-folder-open"></i></p>
-                                        <p class="proj-btn-p">OPEN PROJECT</p>
+                                    <button style="background: transparent; border: none;" data-bs-toggle="modal"
+                                        data-bs-target="#myModal">
+                                        <p><i class="fa-lg fa-solid fa-folder-open"></i></p>
+                                        <p>OPEN PROJECT</p>
                                     </button>
                                 </div>
                             </div>
@@ -196,29 +217,32 @@
                             <div class="proj-img"><img src="../assets/images/homemanager.jpg"
                                     alt="House Manager home page."></div>
                             <div class="proj-badges">
-                                <p class="etiqueta etiqueta-php">PHP</p>
-                                <p class="etiqueta etiqueta-html">HTML</p>
-                                <p class="etiqueta etiqueta-js">JS</p>
-                                <p class="etiqueta etiqueta-css">CSS</p>
-                                <p class="etiqueta etiqueta-sql">SQL</p>
+                                <p class="etiqueta-php">PHP</p>
+                                <p class="etiqueta-html">HTML</p>
+                                <p class="etiqueta-js">JS</p>
+                                <p class="etiqueta-css">CSS</p>
+                                <p class="etiqueta-sql">SQL</p>
                             </div>
-                            <div class="proj-title-s">
-                                <h3 class="proj-title">House Manager</h3>
+                            <div class="proj-title">
+                                <h3>House Manager</h3>
                             </div>
 
-                            <p class="proj-content">Web application that allows you to connect from any
-                                device
-                                on a local network and securely manage the home automation of the house.</p>
+                            <div class="proj-content">
+                                <p>Web application that allows you to connect from any
+                                    device
+                                    on a local network and securely manage the home automation of the house.</p>
+                            </div>
                             <div class="proj-btn-s">
                                 <div class="proj-btn">
                                     <button class="proj-btn-a" style="background: transparent; border: none;"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <p class="proj-btn-p"><i class="fa-lg fa-solid fa-folder-open"></i></p>
-                                        <p class="proj-btn-p">OPEN PROJECT</p>
+                                        data-bs-toggle="modal" data-bs-target="#myModal">
+                                        <p><i class="fa-lg fa-solid fa-folder-open"></i></p>
+                                        <p>OPEN PROJECT</p>
                                     </button>
                                 </div>
                             </div>
                         </div>
+
                     </div>
 
 
@@ -226,25 +250,28 @@
                         <div class="proj" data-aos="fade-up">
                             <div class="proj-img"><img src="../assets/images/forums.png" alt="Forum home page."></div>
                             <div class="proj-badges">
-                                <p class="etiqueta etiqueta-php">PHP</p>
-                                <p class="etiqueta etiqueta-html">HTML</p>
-                                <p class="etiqueta etiqueta-js">JS</p>
-                                <p class="etiqueta etiqueta-css">CSS</p>
-                                <p class="etiqueta etiqueta-sql">SQL</p>
+                                <p class="etiqueta-php">PHP</p>
+                                <p class="etiqueta-html">HTML</p>
+                                <p class="etiqueta-js">JS</p>
+                                <p class="etiqueta-css">CSS</p>
+                                <p class="etiqueta-sql">SQL</p>
                             </div>
-                            <div class="proj-title-s">
-                                <h3 class="proj-title">Forum</h3>
+                            <div class="proj-title">
+                                <h3>Forum</h3>
                             </div>
 
-                            <p class="proj-content">Chat platform for large communities. With
-                                administration
-                                and privileges system.</p>
+                            <div class="proj-content">
+                                <p>Chat platform for large communities. With
+                                    administration
+                                    and privileges system.</p>
+                            </div>
+
                             <div class="proj-btn-s">
                                 <div class="proj-btn">
-                                    <button class="proj-btn-a" style="background: transparent; border: none;"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
-                                        <p class="proj-btn-p"><i class="fa-lg fa-solid fa-folder-open"></i></p>
-                                        <p class="proj-btn-p">OPEN PROJECT</p>
+                                    <button style="background: transparent; border: none;" data-bs-toggle="modal"
+                                        data-bs-target="#myModal">
+                                        <p><i class="fa-lg fa-solid fa-folder-open"></i></p>
+                                        <p>OPEN PROJECT</p>
                                     </button>
                                 </div>
                             </div>
@@ -257,23 +284,26 @@
                             <div class="proj-img"><img src="../assets/images/discordashboard.png"
                                     alt="Discord bot home page."></div>
                             <div class="proj-badges">
-                                <p class="etiqueta etiqueta-php">PHP</p>
-                                <p class="etiqueta etiqueta-html">HTML</p>
-                                <p class="etiqueta etiqueta-js">JS</p>
-                                <p class="etiqueta etiqueta-css">CSS</p>
-                                <p class="etiqueta etiqueta-sql">SQL</p>
+                                <p class="etiqueta-php">PHP</p>
+                                <p class="etiqueta-html">HTML</p>
+                                <p class="etiqueta-js">JS</p>
+                                <p class="etiqueta-css">CSS</p>
+                                <p class="etiqueta-sql">SQL</p>
                             </div>
-                            <div class="proj-title-s">
-                                <h3 class="proj-title">Web Dashboard for Discord Bot</h3>
+                            <div class="proj-title">
+                                <h3>Web Dashboard for Discord Bot</h3>
                             </div>
 
-                            <p class="proj-content">Web application that allows you to modify the
-                                configuration
-                                of the discord bot for all your users.</p>
+                            <div class="proj-content">
+                                <p>Web application that allows you to modify the
+                                    configuration
+                                    of the discord bot for all your users.</p>
+                            </div>
+
                             <div class="proj-btn-s">
                                 <div class="proj-btn">
                                     <button class="proj-btn-a" style="background: transparent; border: none;"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        data-bs-toggle="modal" data-bs-target="#myModal">
                                         <p class="proj-btn-p"><i class="fa-lg fa-solid fa-folder-open"></i></p>
                                         <p class="proj-btn-p">OPEN PROJECT</p>
                                     </button>
@@ -293,7 +323,7 @@
         <!-- FOOTER -->
 
         <footer>
-            <p class="footer-p">CREATED WITH 💗 BY MAYOL AGUSTÍN - 2022</p>
+            <p>CREATED WITH 💗 BY MAYOL AGUSTÍN - 2022</p>
             <div class="contenedor justify-content_space-between">
 
                 <a href="https://github.com/agusmayol" target="_blank">
@@ -328,7 +358,7 @@
     <!-- / FIN GRILLA / -->
 
     <!-- Modal -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -351,19 +381,16 @@
 
     <!-- SCRIPTS -->
 
-    <!-- BOOTSTRAP BUNDLE -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-
     <!-- MODALS -->
 
-    <script>var myModal = document.getElementById('myModal')
-        var myInput = document.getElementById('myInput')
+    <script>
+        var myModal = document.getElementById('myModal');
+        var myInput = document.getElementById('myInput');
 
         myModal.addEventListener('shown.bs.modal', function () {
-            myInput.focus()
-        })</script>
+            myInput.focus();
+        });
+    </script>
 
     <!-- FONTAWESOME ICONS -->
     <script src="https://kit.fontawesome.com/1cbf1e2e0b.js" crossorigin="anonymous"></script>

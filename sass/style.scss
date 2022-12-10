@@ -1,0 +1,17 @@
+/* -----[ GLOBAL VARIABLES ]-----  */
+@import "./globals/global-variables";
+
+/* -----[ FONTS ]-----  */
+@import "./globals/global-fonts";
+
+/* -----[ GLOBAL STYLES ]-----  */
+@import "./globals/global-styles";
+
+/* -----[ MOBILE ]-----  */
+@import "./mediaqueries/mobile";
+
+/* -----[ TABLET ]----- */
+@import "./mediaqueries/tablet";
+
+/* -----[ DESKTOP ]----- */
+@import "./mediaqueries/desktop";
