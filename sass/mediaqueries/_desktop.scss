@@ -318,13 +318,6 @@
         font-family: 'SF', sans-serif;
     }
 
-    .aboutme-p {
-        color: black;
-        padding: 1em;
-        font-size: 1.75em;
-        font-family: 'Montserrat', sans-serif;
-    }
-
     .morph-s {
         grid-area: 1 / 2 / 3 / 3;
         display: flex;
@@ -589,16 +582,50 @@
         border-radius: 10px;
     }
 
-    .project-btn {
-        grid-area: btn-i;
-        background: linear-gradient(145deg, #437aff, #3967dd);
-        border-radius: 8px;
+    .project-btn-s {
         display: flex;
         flex-flow: nowrap row;
-        padding: 1.5em;
         justify-content: center;
         align-items: center;
-        width: 20em;
+        width: auto;
+
+        .project-btn {
+            grid-area: btn-i;
+            background: linear-gradient(145deg, #437aff, #3967dd);
+            border-radius: 8px;
+            display: flex;
+            flex-flow: nowrap row;
+            padding: 1.5em;
+            justify-content: center;
+            align-items: center;
+            width: 20em;
+
+            a {
+                display: flex;
+                flex-flow: nowrap row;
+                justify-content: center;
+                align-items: center;
+                width: 20em;
+
+                p {
+                    font-size: 1.5em;
+                    font-family: 'SFB', sans-serif;
+                    color: white;
+                }
+
+                p:first-child {
+                    padding-right: 0.5em;
+                    font-size: 1.5em;
+                    font-family: 'SFB', sans-serif;
+                    color: white;
+                }
+            }
+        }
+
+        .project-btn:hover {
+            background: linear-gradient(145deg, #3d71eb, #335ecc);
+            transition: background-color 0.15s ease-in;
+        }
     }
 
     // FOOTER

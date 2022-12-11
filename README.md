@@ -2,29 +2,26 @@
 
 ##### Autor: Agustin Mayol
 
-Segunda pre-entrega proyecto final CODERHOUSE
+Tercera pre-entrega proyecto final CODERHOUSE
 
 Curso Desarrollo Web - Comisión 33105
 
 Link github pages: https://agusmayol.github.io/portfolio/
+Link netlify: https://agusmayol.netlify.app/
 
 Notas:
-- Todos los archivos HTML son responsive y tienen sus puntos de quiebre. Utilizan Grids y Flexbox para ello.
+- Para el uso de nesting, hay varios ejemplos; uno de ellos se encuentra en ./sass/mediaqueries/_mobile.scss linea 387
 
-- En bootstrap solo utilicé Modals, que se encuentran en los botones de la sección Projects.
+- Para el uso de minxin, lo hice en ./sass/mediaqueries/_mobile.scss linea 21 y linea 72
+
+- Para el uso de extend, lo hice en ./sass/mediaqueries/_mobile.scss linea 286 y linea 410
 
 Historial de cambios:
-- Bootstrap añadido
-- Modales añadidos
-- Grids y Flexbox en varias secciones
-- Animaciones, transform, transition, AOS y Type It.js
-- Comentarios añadidos
-- mover la carpeta CSS dentro de assets | ./css/style.css -> ./assets/css/style.css
-- Nuevas imagenes de mejor calidad
-- Adaptar todos los títulos, imagenes y textos a los distintos media-queries
-- Añadir mediaqueries
-- Cambios estéticos (Colores, posición de elementos...)
-- Utilizar git para controlar las versiones
-- Subir a github, y utilizar github pages para poder ver el responsive.
+- Añadiendo sass, nesting, uso de extend y mixin.
+- Añadiendo etiquetas SEO [meta desc y kw], completando todos los ALT.
+- Mejorando la performance, accesibilidad, buenas prácticas y SEO en lighthouse [TODO EN 100%].
+- Imágenes optimizadas con loading-lazy y tinypng.
+- Usando favicon.ico de 16x16 para el ícono del sitio.
+- Deprecando el uso de "<br>".
 
 Saludos! Hasta la próxima entrega.
