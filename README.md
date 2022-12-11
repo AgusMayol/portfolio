@@ -7,6 +7,7 @@ Tercera pre-entrega proyecto final CODERHOUSE
 Curso Desarrollo Web - Comisión 33105
 
 Link github pages: https://agusmayol.github.io/portfolio/
+
 Link netlify: https://agusmayol.netlify.app/
 
 Notas:
@@ -22,6 +23,6 @@ Historial de cambios:
 - Mejorando la performance, accesibilidad, buenas prácticas y SEO en lighthouse [TODO EN 100%].
 - Imágenes optimizadas con loading-lazy y tinypng.
 - Usando favicon.ico de 16x16 para el ícono del sitio.
-- Deprecando el uso de "<br>".
+- Deprecando el uso de "BR".
 
 Saludos! Hasta la próxima entrega.
