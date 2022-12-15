@@ -2,7 +2,7 @@
 
 ##### Autor: Agustin Mayol
 
-Tercera pre-entrega proyecto final CODERHOUSE
+Entrega proyecto final CODERHOUSE
 
 Curso Desarrollo Web - Comisión 33105
 

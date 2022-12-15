@@ -206,7 +206,7 @@ form li {
     display: block;
   }
   input {
-    border: none;
+    border: 1px solid #b8b8b8;
     border-radius: 8px;
     background: #f4f2fa;
     box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px #ffffff;
@@ -222,7 +222,7 @@ form li {
     text-decoration: none;
   }
   textarea {
-    border: none;
+    border: 1px solid #b8b8b8;
     border-radius: 8px;
     background: #f4f2fa;
     box-shadow: inset 5px 5px 5px #cbced1, inset -5px -5px 5px #ffffff;
